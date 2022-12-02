@@ -18,9 +18,7 @@ ALL:=\
 	$(BUILD_DIR)/asm/lightdrv.o\
 	$(BUILD_DIR)/asm/mapdrv.o\
 	$(BUILD_DIR)/asm/shadowdrv.o\
-	$(BUILD_DIR)/data/data_1.o\
 	$(BUILD_DIR)/data/sdata_1.o\
-	$(BUILD_DIR)/data/sbss_1.o\
 	$(BUILD_DIR)/src/seq/seqdrv.o\
 	$(BUILD_DIR)/asm/DEMOInit.o\
 	$(BUILD_DIR)/asm/DEMOPad.o\
