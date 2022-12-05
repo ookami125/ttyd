@@ -19,3 +19,4 @@
 build
 tools/mwcc_compiler/
 *.bat
+fulldisk/

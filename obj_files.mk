@@ -2,7 +2,6 @@ ALL:=\
 	$(BUILD_DIR)/asm/init.o\
 	$(BUILD_DIR)/data/extab.o\
 	$(BUILD_DIR)/data/extabindex.o\
-	\
 	$(BUILD_DIR)/src/main.o\
 	$(BUILD_DIR)/asm/system.o\
 	$(BUILD_DIR)/asm/seq/seq_game.o\
@@ -29,6 +28,7 @@ ALL:=\
 	$(BUILD_DIR)/src/texPalette.o\
 	$(BUILD_DIR)/asm/evt/evt_map.o\
 	$(BUILD_DIR)/asm/mapdata.o\
+	$(BUILD_DIR)/src/mapdata.o\
 	$(BUILD_DIR)/asm/animdrv.o\
 	$(BUILD_DIR)/asm/npcdrv.o\
 	$(BUILD_DIR)/asm/evt/evt_npc.o\
@@ -140,7 +140,7 @@ ALL:=\
 	$(BUILD_DIR)/asm/statuswindow.o\
 	$(BUILD_DIR)/asm/evt/evt_seq.o\
 	$(BUILD_DIR)/asm/eff/eff_damage_star.o\
-	$(BUILD_DIR)/asm/eff/eff_hit.o\
+	$(BUILD_DIR)/src/eff/eff_hit.o\
 	$(BUILD_DIR)/asm/eff/eff_mario_balloon.o\
 	$(BUILD_DIR)/asm/eff/eff_small_star.o\
 	$(BUILD_DIR)/asm/eff/eff_mugi.o\
@@ -201,11 +201,12 @@ ALL:=\
 	$(BUILD_DIR)/asm/battle/ac/ac_lst_rc_keep.o\
 	$(BUILD_DIR)/asm/battle/battle_audience.o\
 	$(BUILD_DIR)/asm/mario/mario_cam.o\
-	$(BUILD_DIR)/asm/battle/unit/unit_object_tree.o\
-	$(BUILD_DIR)/asm/battle/unit/unit_object_switch.o\
+	$(BUILD_DIR)/src/battle/unit/unit_object_tree.o\
+	$(BUILD_DIR)/src/battle/unit/unit_object_switch.o\
 	$(BUILD_DIR)/asm/battle/battle_icon.o\
 	$(BUILD_DIR)/asm/evt/evt_telop.o\
 	$(BUILD_DIR)/asm/battle/ac/ac_repeatedly_lv.o\
+	$(BUILD_DIR)/src/battle/battle_message.o\
 	$(BUILD_DIR)/asm/battle/battle_message.o\
 	$(BUILD_DIR)/asm/eff/eff_whirlwind_n64.o\
 	$(BUILD_DIR)/asm/eff/eff_akari_charge_n64.o\
@@ -361,7 +362,7 @@ ALL:=\
 	$(BUILD_DIR)/asm/battle/ac/ac_power_gauge_lv.o\
 	$(BUILD_DIR)/asm/battle/sac/sac_bakugame.o\
 	$(BUILD_DIR)/asm/battle/ac/ac_signal_timing.o\
-	$(BUILD_DIR)/asm/mail_data.o\
+	$(BUILD_DIR)/src/mail_data.o\
 	$(BUILD_DIR)/asm/battle/sac/sac_scissor.o\
 	$(BUILD_DIR)/asm/battle/sac/sac_zubastar.o\
 	$(BUILD_DIR)/asm/battle/ac/ac_gauge_timing.o\

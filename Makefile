@@ -134,6 +134,10 @@ $(DOL): $(ELF) | tools
 	$(QUIET) $(ELF2DOL) $< $@
 	$(QUIET) $(SHA1SUM) -c sha1/$(NAME).$(VERSION).sha1
 
+run: $(DOL)
+	cp $(DOL) fulldisk/G8MJ01/sys/main.dol
+	dolphin-emu -b -e fulldisk/G8MJ01/sys/main.dol
+
 clean:
 	rm -f -d -r build
 	find . -name '*.o' -exec rm {} +
@@ -144,7 +148,7 @@ tools:
 	$(MAKE) -C tools
 
 # ELF creation makefile instructions
-$(ELF): $(O_FILES) $(LDSCRIPT)
+$(ELF): $(O_FILES) $(LDSCRIPT) obj_files.mk
 	@echo Linking ELF $@
 	$(QUIET) @echo $(O_FILES) > build/o_files
 	$(QUIET) $(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files

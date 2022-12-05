@@ -7,5 +7,5 @@ else
     OPTIONS="--start-address=$(($1)) --stop-address=$(($1 + $2))"
 fi
 $OBJDUMP $OPTIONS baserom.dol > baserom.dump
-$OBJDUMP $OPTIONS build/ttyd_jp/ttyd_jp.dol > ttyd_jp.dump
+$OBJDUMP $OPTIONS build/ttyd.jp/main.dol > ttyd_jp.dump
 colordiff -u baserom.dump ttyd_jp.dump
